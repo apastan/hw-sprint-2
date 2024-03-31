@@ -1,5 +1,4 @@
 import React from 'react'
-import message from '../message/Message.module.css'
 import friend from './FriendMessage.module.css'
 import {MessagePropsType} from "../message/Message";
 
@@ -28,11 +27,11 @@ const FriendMessage = (props: FriendMessageProps) => {
                         className={friend.friendName}>
                         {props.message.user.name}
                     </div>
-                    <div
+                    <pre
                         id={'hw1-friend-text-' + props.message.id}
                         className={friend.friendMessageText}>
                         {props.message.message.text}
-                    </div>
+                    </pre>
                 </div>
             </div>
         </div>
