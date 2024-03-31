@@ -1,13 +1,15 @@
 .message {
     max-width: 60%;
     width: 100%;
-    margin-left: auto;
-    margin-right: 0;
+    margin-bottom: 40px;
 
     font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
     line-height: 1.2;
-    text-align: left;
+
+    /* My Message */
+    margin-left: auto;
+    margin-right: 0;
+    color: #FFFFFF;
 }
 
 .imageAndText {
@@ -23,23 +25,30 @@
 }
 
 .text {
-    background-color: #0066CC;
-    border-radius: 10px 10px 0 10px;
+    flex-grow: 1;
+
+    border-radius: 12px 12px 0 12px;
     padding: 7px 13px;
 
     position: relative;
+
+    /* My Message */
+    background-color: #0066CC;
+    /*box-shadow: 0px 1px 2px 0px rgba(29, 33, 38, 0.1), 0px 5px 20px 0px rgba(29, 33, 38, 0.03);*/
+    filter: drop-shadow(0px 1px 2px rgba(29, 33, 38, 0.5)) drop-shadow(0px 5px 20px rgba(29, 33, 38, 0.03));
 }
 
 .text:after {
     position: absolute;
     content: "";
-    right: -15px;
     bottom: 0;
 
     width: 0;
     height: 0;
 
-    border-right: 15px solid transparent;
+    /* My Message */
+    right: -12px;
+    border-right: 12px solid transparent;
     border-bottom: 12px solid #0066CC;
 }
 
@@ -47,6 +56,9 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 3px;
+
+    /* My Message */
+    text-align: right;
 }
 
 .messageText {

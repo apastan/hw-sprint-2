@@ -21,7 +21,7 @@ const Message = (props: MessagePropsType) => {
                         {props.message.message.text}
                     </div>
                 </div>
-                <div className={s.avatarAndTime}>
+                <div>
                     <div id={'hw1-time-' + props.message.id} className={s.time}>
                         {/*создаёт студент*/}
                         {props.message.message.time}
