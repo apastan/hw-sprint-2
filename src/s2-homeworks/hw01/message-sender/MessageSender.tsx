@@ -59,6 +59,7 @@ const MessageSender = (props: any) => {
                     onKeyDown={onKeyDown}
                 />
                 <button
+                    type="button"
                     id={'hw1-button'}
                     className={s.button}
 
