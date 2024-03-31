@@ -36,10 +36,35 @@ export const message0: MessageType = {
         name: 'Ivan',  // можно менять
     },
     message: {
-        text: 'Hello, she didn’t do anything and rested all day, how are you? Hello, how are you, what did you do yesterday? Hello, how are you, what did you do yesterday?', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello there!', // можно менять
+        time: '08:56', // можно менять
     },
 }
+
+export const message1: MessageType = {
+    id: 0,
+    user: {
+        avatar: avatar, // можно менять
+        name: 'Ivan',  // можно менять
+    },
+    message: {
+        text: 'Did you hear news?', // можно менять
+        time: '22:03', // можно менять
+    },
+}
+
+export const message2: MessageType = {
+    id: 0,
+    user: {
+        avatar: avatar, // можно менять
+        name: 'Ivan',  // можно менять
+    },
+    message: {
+        text: `She didn't do anything and rested all day! I can't believe that is true... May be it's just rumors?`, // можно менять
+        time: '22:03', // можно менять
+    },
+}
+
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
@@ -47,8 +72,8 @@ export const friendMessage0: MessageType = {
         name: 'Brad', // можно менять
     },
     message: {
-        text: 'Hello?', // можно менять
-        time: '22:00', // можно менять
+        text: "Hello?", // можно менять
+        time: '22:02', // можно менять
     },
 }
 
@@ -59,8 +84,8 @@ export const friendMessage1: MessageType = {
         name: 'Brad', // можно менять
     },
     message: {
-        text: 'Hello, how are you, what did you do yesterday?', // можно менять
-        time: '22:00', // можно менять
+        text: "In fact, I don't know", // можно менять
+        time: '22:43', // можно менять
     },
 }
 
@@ -71,8 +96,8 @@ export const friendMessage2: MessageType = {
         name: 'Brad', // можно менять
     },
     message: {
-        text: 'Hello, how are you, what did you do yesterday? Hello, how are you, what did you do yesterday?', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello, how are you, what did you do yesterday? Hello, how are you, what did you do yesterday? Hello, how are you, what did you do yesterday? Hello, how are you, what did you do yesterday?', // можно менять
+        time: '08:43', // можно менять
     },
 }
 
@@ -85,8 +110,8 @@ const HW1 = () => {
                 <div>
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
-                    <Message message={message0} />
-                    <Message message={message0} />
+                    <Message message={message1} />
+                    <Message message={message2} />
                     <FriendMessage message={friendMessage1} />
                     <FriendMessage message={friendMessage2} />
                 </div>
