@@ -5,6 +5,8 @@
 
     font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
+    /*font-optical-sizing: auto;*/
+    /*font-style: normal;*/
 
     /* My Message */
     margin-left: auto;
@@ -26,8 +28,6 @@
 }
 
 .text {
-    /*flex-grow: 1;*/
-
     border-radius: 12px 12px 0 12px;
     padding: 7px 13px;
 
@@ -65,6 +65,8 @@
 .messageText {
     font-size: 16px;
     font-weight: 400;
+    white-space: pre-wrap;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .time {
