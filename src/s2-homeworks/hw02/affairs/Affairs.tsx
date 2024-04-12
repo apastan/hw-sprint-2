@@ -11,17 +11,21 @@ type AffairsPropsType = {
 }
 
 function Affairs(props: AffairsPropsType) {
-    const setAll = () => {
-        props.setFilter("all")
-    }
-    const setHigh = () => {
-        props.setFilter("high")
-    }
-    const setMiddle = () => {
-        props.setFilter("middle")
-    }
-    const setLow = () => {
-        props.setFilter("low")
+    // const setAll = () => {
+    //     props.setFilter("all")
+    // }
+    // const setHigh = () => {
+    //     props.setFilter("high")
+    // }
+    // const setMiddle = () => {
+    //     props.setFilter("middle")
+    // }
+    // const setLow = () => {
+    //     props.setFilter("low")
+    // }
+
+    const updateFilter = (filter:FilterType) => () => {
+        props.setFilter(filter)
     }
 
     const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
@@ -42,28 +46,28 @@ function Affairs(props: AffairsPropsType) {
             <div className={s.buttonContainer}>
                 <button
                     id={'hw2-button-all'}
-                    onClick={setAll}
+                    onClick={updateFilter("all")}
                     className={cnAll}
                 >
                     All
                 </button>
                 <button
                     id={'hw2-button-high'}
-                    onClick={setHigh}
+                    onClick={updateFilter("high")}
                     className={cnHigh}
                 >
                     High
                 </button>
                 <button
                     id={'hw2-button-middle'}
-                    onClick={setMiddle}
+                    onClick={updateFilter("middle")}
                     className={cnMiddle}
                 >
                     Middle
                 </button>
                 <button
                     id={'hw2-button-low'}
-                    onClick={setLow}
+                    onClick={updateFilter("low")}
                     className={cnLow}
                 >
                     Low
