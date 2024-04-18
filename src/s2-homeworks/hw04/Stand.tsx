@@ -19,6 +19,7 @@ const Stand = () => {
                         id={'hw4-super-input-like-old'}
                         value={stateForAllInputs}
                         onChange={(e) => setValue(e.currentTarget.value)}
+                        spanClassName={"dddddddddddd"}
                     />
                 </div>
                 {/*инпут с ошибкой:*/}
