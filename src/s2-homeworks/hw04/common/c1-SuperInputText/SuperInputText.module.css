@@ -1,20 +1,42 @@
+.input, .error {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .input:focus {
 }
 
 .input {
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 1);
 }
 
 .inputWrapper {
+    width: 372px;
+
+    position: relative;
 }
 
 .superInput {
+
 }
 
 .errorInput {
+    border-color: rgba(204, 20, 57, 1);
 }
 
 .errorInput:focus {
+
 }
 
 .error {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(204, 20, 57, 1);
+
+    position: absolute;
+    top: -15px;
+    left: 0;
 }
