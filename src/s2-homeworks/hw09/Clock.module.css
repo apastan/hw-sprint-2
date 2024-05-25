@@ -1,14 +1,36 @@
 .buttonsContainer {
+
 }
 
 .clock {
+
+}
+
+.clock button {
+    width: auto;
+}
+
+.clock button:disabled {
+    color: #fff;
+}
+
+.clock button:first-child {
+    margin-right: 20px;
 }
 
 .watch {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .watch strong {
+    font-weight: 600;
 }
 
 .more {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
 }
