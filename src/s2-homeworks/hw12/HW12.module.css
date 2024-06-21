@@ -18,6 +18,12 @@ html {
     color: var(--color);
 }
 
-.select {
+.select, .label  {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
 
+.select {
+    text-transform: capitalize;
 }
